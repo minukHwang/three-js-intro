@@ -43,7 +43,7 @@ const geometry = new THREE.BoxGeometry(1, 1, 1) //매개변수는 박스의 사�
 
 [three.js](https://threejs.org/docs/index.html#api/en/geometries/BoxGeometry)
 
-1. material
+2. material
 
 ```jsx
 const material = new THREE.MeshBasicMaterial({ color : '#ff0000' }) 
@@ -52,7 +52,7 @@ const material = new THREE.MeshBasicMaterial({ color : '#ff0000' })
 
 [three.js](https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial)
 
-1. Mesh (geometry + material)  형성하기
+3. Mesh (geometry + material)  형성하기
 
 ```jsx
 const cube = new THREE.Mesh(geometry, material)
@@ -60,13 +60,13 @@ const cube = new THREE.Mesh(geometry, material)
 
 [three.js](https://threejs.org/docs/index.html#api/en/objects/Mesh)
 
-1. Scene에 추가하기
+4. Scene에 추가하기
 
 ```jsx
 scene.add(mesh)
 ```
 
-1. Camera 추가하기
+5. Camera 추가하기
 
 ```jsx
 const sizes = {
@@ -80,13 +80,13 @@ const camera = new THREE.PerspectiveCamera(75, sizes.width/sizes.height)
 scene.add(camera)
 ```
 
-1. html canvas 추가하기
+6. html canvas 추가하기
 
 ```html
 <canvas class="webgl"></canvas>
 ```
 
-1. 렌더러 추가
+7. 렌더러 추가
 
 ```jsx
 const canvas = document.querySelector(".webgl")
@@ -95,7 +95,7 @@ const renderer = new THREE.WebGLRenderer({
 })
 ```
 
-1. 렌더러 사이즈 조정
+8. 렌더러 사이즈 조정
 
 ```jsx
 renderer.setSize(sizes.width, sizes.height)
@@ -111,8 +111,8 @@ renderer.render(scene, camera)
 ⚠️ 여기까지만하면 검은창이 나올 것이다. 그 이유는 카메라의 포지션이 큐브 안에 위치해있기 때문!
 
 </aside>
-
-1. 카메라 포지션 설정하기
+  
+10. 카메라 포지션 설정하기
 - 포지션은 xyz 축으로 이루어져 있다. (x축: 오른쪽, y축: 위쪽, z축: 앞쪽)
 
 ```jsx
