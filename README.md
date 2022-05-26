@@ -113,6 +113,7 @@ renderer.render(scene, camera)
 </aside>
 </br>
 </br>
+</br>
 
 10. 카메라 포지션 설정하기
 - 포지션은 xyz 축으로 이루어져 있다. (x축: 오른쪽, y축: 위쪽, z축: 앞쪽)
