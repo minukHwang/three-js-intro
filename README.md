@@ -106,7 +106,8 @@ renderer.setSize(sizes.width, sizes.height)
 ```jsx
 renderer.render(scene, camera)
 ```
-
+  
+  
 <aside>
 ⚠️ 여기까지만하면 검은창이 나올 것이다. 그 이유는 카메라의 포지션이 큐브 안에 위치해있기 때문!
 
